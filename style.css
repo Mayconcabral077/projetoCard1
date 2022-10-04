@@ -1,0 +1,94 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{ background-color:hsl(30, 38%, 92%); color: hsl(228, 12%, 48%); }
+
+#card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    height: 450px;
+    width: 600px;
+    margin:30px auto ;
+}
+
+.img-desktop{max-width: 301px; height: 450px; border-radius: 10px 0 0 10px;}
+.img-mobile{display:none; width: 301px; height: 448px; border-radius: 10px 0 0 10px;}
+.card-txt{ padding: 33px; font-family:'Montserrat', sans-serif;}
+h1{letter-spacing: 4px; margin-bottom: 23px; font-size: 14px; font-weight: 500;}
+
+h2 {
+    color:hsl(212, 21%, 14%); 
+    font-size:32px; 
+    font-family: 'Fraunces', serif; 
+    font-weight:700; 
+    padding-right: 31px; 
+    margin-bottom: 23px; 
+    line-height: 32px;
+}
+
+p {font-size: 14px; line-height: 23px; font-weight: 500;}
+
+.preco {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    color: hsl(158, 36%, 37%);
+}
+.por {font-family:'Fraunces', serif; font-weight: 700; font-size: 30px;}
+.de {margin-left: 25px; text-decoration: line-through; font-size: 14px;}
+
+button{
+    margin-top: 50px;
+    height: 47px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color:hsl(158, 36%, 37%) ;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+button:active {background-color: #444939;}
+.img-carrinho {padding-right: 10px;}
+
+.attribution {padding-top: 60px; text-align: center; font-size: 18px;}
+.attribution a {
+    color:rgb(59, 52, 52); 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+@media (max-width:720px) {
+
+#card {
+    display:flex; 
+    flex-direction: column;
+    width:320px; 
+    height: 637px; 
+    margin-top: 25px;
+    }
+
+h1{margin-bottom:16px;}
+
+.img-desktop {display: none;}
+
+.img-mobile {
+    display:block; 
+    height: 215px; 
+    width: 320px; 
+    border-radius: 10px 10px 0 0;
+    }
+
+.card-txt{ padding: 19px 20px;}
+
+h3{ padding-right: 10px; margin-bottom: 15px;}
+
+button {margin-top: 20px;}
+
+p:nth-child(3){padding-right: 10px;}
+
+.attribution { padding-top: 0; text-align: center; font-size: 13px;}
+
+}
